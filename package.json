@@ -1,0 +1,20 @@
+{
+  "name": "spotify-backup",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larsthorup/spotify-backup.git"
+  },
+  "author": "Lars Thorup <lars@zealake.com> (https://www.zealake.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "got": "^11.8.2"
+  }
+}

@@ -77,6 +77,8 @@ const main = async () => {
       const { id: playlistId } = playlist;
       const trackListGetting = gettingPlaylistTrackList({ accessToken, playlistId });
       for await (const item of trackListGetting) {
+        if (item.track.available_markets) delete item.track.available_markets;
+        if (item.track?.album.available_markets) delete item.track.album.available_markets;
         trackList.push(item.track);
       }
       const playlistPath = `output/${slug(playlist.name)}.json`;
